@@ -96,12 +96,12 @@ const Login = () => {
   return (
     <div className="flex min-h-screen">
       {/* Left Section */}
-      <div className="w-1/2 bg-white p-12 relative flex items-center justify-center">
+      <div className="sm:hidden md:flex lg:flex w-1/2 bg-white p-12 relative items-center justify-center">
         <StatisticsCard />
       </div>
 
       {/* Right Section */}
-      <div className="w-1/2 bg-gray-50 flex flex-col items-center justify-center p-4">
+      <div className="lg:w-1/2 md:w-1/2 w-full bg-gray-50 flex flex-col items-center justify-center p-4">
         <div className="w-full h-[27rem] max-w-md bg-white rounded-xl drop-shadow-lg p-8">
           <div className="flex flex-col items-center mb-8">
             <div className="mb-4 text-1xl font-bold flex flex-row items-center justify-center">
