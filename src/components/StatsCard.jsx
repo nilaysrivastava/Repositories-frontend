@@ -62,7 +62,7 @@ const StatsCard = () => {
       </div>
 
       <div className="absolute bottom-0 left-0">
-        <img src={i2} className="w-[250px] h-[250px]" />
+        <img src={i2} className="h-[250px]" />
       </div>
     </div>
   );

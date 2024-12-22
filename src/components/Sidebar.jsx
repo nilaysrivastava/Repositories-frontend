@@ -11,9 +11,11 @@ import {
   XIcon,
 } from "@heroicons/react/outline";
 import lb from "../images/logo-b.png";
+import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
   const [selectedOrganization, setSelectedOrganization] = useState(
     "UtkarshDhairyaPa..."
   );
@@ -28,6 +30,10 @@ const Sidebar = () => {
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleLogout = () => {
+    navigate("/");
   };
 
   return (
@@ -131,6 +137,7 @@ const Sidebar = () => {
           <a
             href="#"
             className="flex items-center px-2 py-1 text-gray-700 hover:bg-gray-100 rounded-md"
+            onClick={handleLogout}
           >
             <LogoutIcon className="w-5 h-5 mr-3" />
             Logout
